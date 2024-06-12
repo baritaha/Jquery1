@@ -1,0 +1,132 @@
+.ClientSide{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.ClientSide .container2 {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+.ClientSide .container2 h1{
+    background-color: #0056b3;
+    color:white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.inputform .singleinput {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.inputform label {
+    display: block;
+    margin-bottom: 5px;
+  float: left;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.inputform input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    transition: border-color 0.3s ease;
+}
+.inputform input:hover{
+    border: 2px solid #83b2e4;
+   transform: translateY(-1px);
+   transition: 0.4s ease-in-out;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 3D box shadow effect */
+   background-color: #c2c4c7;
+   
+}
+.inputform input:hover::placeholder{
+  
+    transition: 0.4s ease-in-out;
+}
+@keyframes moveup{
+
+}
+.inputform .validation-icon {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    font-size: 16px;
+    pointer-events: none;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+.inputform input.valid {
+    border-color: #28a745;
+}
+
+.inputform input.valid + .validation-icon::before {
+    content: '\f058'; /* Font Awesome check-circle icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #28a745;
+}
+
+.inputform input.invalid {
+    border-color: #dc3545;
+}
+
+.inputform input.invalid + .validation-icon::before {
+    content: '\f06a'; /* Font Awesome exclamation-circle icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #dc3545;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus{
+outline: none;
+}
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.toast.show {
+    opacity: 1;
+}

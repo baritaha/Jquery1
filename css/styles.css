@@ -1,0 +1,162 @@
+/* styles.css */
+body {
+   min-width: 100vh;
+   width: 100%;
+   top: 0;
+   margin: 0;
+   bottom: 0;
+}
+.head{
+    top: 0;
+width: 100% !important;
+height: 50px !important;
+background-color: silver;
+align-items: center;
+justify-content: center;
+position: relative;
+
+}
+.head .headsub{
+    top: 0;
+    display: flex;
+    max-height: 50px !important;
+    margin-left: 50%;
+    position: absolute;
+}
+.head .headsub ul{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:22px
+   
+}
+.head .headsub ul li{
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .headsub ul li a{
+    text-decoration: none;
+    color: white;
+}
+.head .headsub ul li{
+    margin-left: 20px;
+}
+.AddToList{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000; /* Default text color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Border color when focused */
+    outline: none; /* Remove default outline */
+}
+
+button {
+ 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: 0.3s ease-in;
+}
+button i{
+    font-size: 20px;
+    padding: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background:#007bff;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+   font-family: cursive;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+li:hover{
+    background-color:#0056b3;
+    cursor: pointer;
+}
+li:hover .deleteButton {
+    display: inline-block;
+    color: silver;
+    background-color: transparent;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+li .deleteButton {
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0px;
+}
+
+li .deleteButton:hover {
+    color: crimson;
+    background-color: transparent;
+}
+footer{
+    min-height: 15vh;
+ width: 100%;
+   position: absolute;
+   bottom: 0;
+
+    background-color: silver;
+}
+/*********************************Client Side***********************************************************/

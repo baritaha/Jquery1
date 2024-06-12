@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Side</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/clientStyle.css">
+</head>
+<body>
+   <hr>
+   <div class="ClientSide">
+    <div class="container2">
+        <h1>Create Acount</h1>
+        <form id="client-form" class="inputform" novalidate>
+            <div class="singleinput">
+                <label>User Name</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username">
+                <span class="validation-icon" id="username-icon"></span>
+                <span class="error-message" id="username-error">Username must be at least 3 characters long.</span>
+            </div>
+            <div class="singleinput">
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+                <span class="validation-icon" id="email-icon"></span>
+                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+            </div>
+            <div class="singleinput">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <span class="validation-icon" id="password-icon"></span>
+                <span class="error-message" id="password-error">Password must be at least 8 characters long and include an uppercase letter, a lowercase letter, a number, and a special character.</span>
+            </div>
+            <div class="singleinput">
+                <label>Repeat Password</label>
+                <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat your password">
+                <span class="validation-icon" id="repeat-password-icon"></span>
+                <span class="error-message" id="repeat-password-error">Passwords must match.</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div id="toast-container"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/client.js"></script>
+</body>
+</html>
